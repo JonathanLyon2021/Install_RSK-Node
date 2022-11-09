@@ -26,6 +26,7 @@ allows the transfer of bitcoins from the Bitcoin blockchain to the RSK blockchai
 • RSKJ-Core v1.3.0 *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0*
 
 # 1. Download and Run RSK
+
 1. Download rskj-core-1.3.0-WASABI-all.jar on *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0*
 Place it on your preferred directory. Starting now, this directory will be referred to as your workspace.
 
@@ -42,8 +43,8 @@ on the console and it looks like the command is not responding. That is normal.
 
 1. If you don’t have truffle and solc already, run the following command:
 
-    npm install -g truffle@5.1.19
-    npm install -g solc@0.6.0
+        npm install -g truffle@5.1.19
+        npm install -g solc@0.6.0
 
 You may need administrative permissions to continue with the installation.
 2. On a new terminal, initialize a truffle project and accept any prompts that may show up:
@@ -65,18 +66,35 @@ version: "0.6.0",
 },
 },
 };*
-4. Verify if you are successfully connected to RSKJ.
+4. Verify if you are successfully connected to RSKJ. 
 
-
-    truffle console
-    web3.eth.getAccounts()
+        truffle console
+        web3.eth.getAccounts()
 
 5. Select the default account where transactions such as contract deployment will occur by default. In this
 exercise, choose the first account, then add it to truffle-config.js
     
+# 3. Implement and Deploy a Smart Contract
+
+1. To jumpstart things, let’s use Truffle to create a contract template file for us on the correct directory:
+
+        truffle create contract SimpleStorage
+
+This creates a SimpleStorage.sol contract template file on the contracts/ folder.
+
+2. Use your favorite editor to implement the SimpleStorage contract. Remember to use solidity ^0.6.0:
+
+3. Setup Migrations. Create a 2_deploy_contracts.js in the migrations folder with this content:
+
+4. With the files in place, you are now ready to deploy the smart contract. In your terminal, issue the following
+commands:
+
+        truffle compile
+        truffle migrate
+
+It will take some time because the block where the transaction is included must be mined.
     
-    
-    
+Awesome! You have successfully deployed a contract in the local RSK blockchain.
     
     
     
