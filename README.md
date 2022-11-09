@@ -35,3 +35,60 @@ contents of the following gist:
 
 3. Open up a terminal on your workspace and run an RSK node. Note that you will not see any print statements
 on the console and it looks like the command is not responding. That is normal.
+
+    java -Drsk.conf.file=node.conf -cp rskj-core-1.3.0-WASABI-all.jar co.rsk.Start
+    
+# 2. Install and Configure Truffle Project
+
+1. If you don’t have truffle and solc already, run the following command:
+
+    npm install -g truffle@5.1.19
+    npm install -g solc@0.6.0
+
+You may need administrative permissions to continue with the installation.
+2. On a new terminal, initialize a truffle project and accept any prompts that may show up:
+
+    truffle init
+    
+3. Configure truffle-config.js, replace it with the following content:
+*module.exports = {
+networks: {
+development: {
+host: "127.0.0.1",
+port: 4444,
+network_id: "*",
+},
+},
+compilers: {
+solc: {
+version: "0.6.0",
+},
+},
+};*
+4. Verify if you are successfully connected to RSKJ.
+
+
+    truffle console
+    web3.eth.getAccounts()
+
+5. Select the default account where transactions such as contract deployment will occur by default. In this
+exercise, choose the first account, then add it to truffle-config.js
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
