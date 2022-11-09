@@ -10,3 +10,17 @@ interact with them.
 The Smart Bitcoin (R-BTC) is the native token in RSK and it is used to pay for the gas required for the execution of
 transactions. It is pegged 1:1 with Bitcoin, which means in RSK there are exactly 21M R-BTC. A 2-way peg (2WP)
 allows the transfer of bitcoins from the Bitcoin blockchain to the RSK blockchain and vice-versa.
+
+# Goals
+
+• Run a local RSK blockchain node.
+• Deploy and interact with the contracts deployed on the RSK blockchain.
+
+# Prerequisites
+
+• Java JDK 14 *https://www.oracle.com/java/technologies/javase-jdk14-downloads.html*
+• Node v13.5.0 *https://nodejs.org/download/release/v13.5.0/*
+• NPM v6.13.4 Already bundled with Node.
+• Truffle v5.1.19 npm install -g truffle@5.1.19
+• Solc v0.6.0 npm install -g solc@0.6.0
+• RSKJ-Core v1.3.0 *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0*
