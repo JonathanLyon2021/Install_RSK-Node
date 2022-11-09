@@ -96,8 +96,20 @@ It will take some time because the block where the transaction is included must 
     
 Awesome! You have successfully deployed a contract in the local RSK blockchain.
     
-    
-    
+# 4. Interacting with the Contract
+
+1. Launch a terminal in your workspace. To interact with the contract, use truffle console.
+
+2. Then, get a reference of the deployed contract instance.
+
+3. Retrieve the value of the data in the contract by calling the get() function. Remember that we had set a
+default value of 1234 in the contract’s constructor, so we should expect to see 1234 when retrieving the
+value for the first time.
+
+4. Finally, let’s set a value by calling the set() function and retrieving get() the value again afterwards to
+verify if we had indeed interacted with the contract.
+
+### Congratulations! Now, you know how to deploy smart contracts in the RSK blockchain and interact with them.
     
     
     
