@@ -24,3 +24,14 @@ allows the transfer of bitcoins from the Bitcoin blockchain to the RSK blockchai
 • Truffle v5.1.19 npm install -g truffle@5.1.19
 • Solc v0.6.0 npm install -g solc@0.6.0
 • RSKJ-Core v1.3.0 *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0*
+
+# 1. Download and Run RSK
+1. Download rskj-core-1.3.0-WASABI-all.jar on *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0*
+Place it on your preferred directory. Starting now, this directory will be referred to as your workspace.
+
+2. Add the configuration file node.conf for RSKJ. Open up your favorite editor in the workspace and copy the
+contents of the following gist:
+*https://gist.github.com/24thsaint/85cb2d3f8c3cd7b42cf6b3d13b48ce97*
+
+3. Open up a terminal on your workspace and run an RSK node. Note that you will not see any print statements
+on the console and it looks like the command is not responding. That is normal.
