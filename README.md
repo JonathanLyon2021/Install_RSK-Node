@@ -18,12 +18,12 @@ allows the transfer of bitcoins from the Bitcoin blockchain to the RSK blockchai
 
 # Prerequisites
 
-• Java JDK 14 *https://www.oracle.com/java/technologies/javase-jdk14-downloads.html*
-• Node v13.5.0 *https://nodejs.org/download/release/v13.5.0/*
-• NPM v6.13.4 Already bundled with Node.
-• Truffle v5.1.19 npm install -g truffle@5.1.19
-• Solc v0.6.0 npm install -g solc@0.6.0
-• RSKJ-Core v1.3.0 *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0*
+• Java JDK 14 *https://www.oracle.com/java/technologies/javase-jdk14-downloads.html* <br>
+• Node v13.5.0 *https://nodejs.org/download/release/v13.5.0/* <br>
+• NPM v6.13.4 Already bundled with Node. <br>
+• Truffle v5.1.19 **npm install -g truffle@5.1.19** <br>
+• Solc v0.6.0 **npm install -g solc@0.6.0** <br>
+• RSKJ-Core v1.3.0 *https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0* <br>
 
 # 1. Download and Run RSK
 
@@ -49,7 +49,7 @@ on the console and it looks like the command is not responding. That is normal.
 You may need administrative permissions to continue with the installation.
 2. On a new terminal, initialize a truffle project and accept any prompts that may show up:
 
-    truffle init
+        truffle init
     
 3. Configure truffle-config.js, replace it with the following content:
 *module.exports = {
